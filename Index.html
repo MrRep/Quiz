@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="content">
+            <!-- Початкова сторінка з кнопкою Почати -->
+            <div class="start-page">
+                <button class="start-button"
+                    onclick="startGame()">Почати</button>
+            </div>
+
+            <!-- Завдання та таймер з'являються після натискання кнопки -->
+            <div class="game-content" style="display: none;">
+                <div class="text"></div>
+                <div class="info">
+                    <div class="main"></div>
+                    <div class="main"></div>
+                    <div class="main"></div>
+                    <div class="main"></div>
+                    <div class="main"></div>
+                </div>
+
+                <!-- Таймер -->
+                <div id="timer" class="timer"></div>
+            </div>
+        </div>
+
+        <div class="menu-button" id="menuToggle">☰</div>
+        <div class="side-menu" id="sideMenu">
+            <div class="side-menu-content">
+                <h2>налаштування</h2>
+                <div class="side-menu-content">
+                    <ul>
+                        <li id="myInfoOpen">
+                            <img
+                                src="/Backgraund/Settings_icon-removebg-preview 1.png"
+                                class="menu-icon" alt="Головне" />
+                            Головне
+                        </li>
+                        <li id="myInfoOpenWindows">
+                            <img
+                                src="/Backgraund/Baixe_Vetores__Imagens__Fotos_e_Vídeos_Gratuitos-removebg-preview 1.png"
+                                class="menu-icon" alt="Рекорди" />
+                            Рекорди
+                        </li>
+                        <li id="myInfoOpenWindowsWW">
+                            <img src="/Backgraund/___3_-removebg-preview 1.png"
+                                class="menu-icon" alt="Історія" />
+                            Історія
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-social-icons">
+                    <ul class="social-icons">
+                        <li><a href class="social-icon"> <i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href class="social-icon"> <i
+                                    class="fa fa-youtube"></i></a></li>
+                        <li><a href class="social-icon"> <i
+                                    class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Модальне вікно 1 -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>налаштування</h2>
+                <p>Це приклад тексту у вашому модальному вікні.</p>
+            </div>
+        </div>
+
+        <!-- Модальне вікно 2 -->
+        <div id="myModalWindows" class="modalWindows">
+            <div class="modal-contentWindows">
+                <span class="closeWindows">&times;</span>
+                <h2>Історія</h2>
+                <p>На данний момент цей сайт не підключаний до сервера тому
+                    таблиця лідерів не доступна!</p>
+            </div>
+        </div>
+
+        <!-- Модальне вікно 3 -->
+        <div id="myModalWindowsWW" class="modalWindowsWW">
+            <div class="modal-contentWindowsWW">
+                <span class="closeWindowsWW">&times;</span>
+                <h2>Результати</h2>
+                <div id="quizResults"></div>
+            </div>
+        </div>
+
+        <script src="Index.js"></script>
+    </body>
+</html>
